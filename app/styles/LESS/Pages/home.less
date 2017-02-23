@@ -1,7 +1,17 @@
 .splash{
   height:100%;
   width:100%;
-  position: fixed;
+  position: absolute;
   background: url('https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Road.jpg');
   background-size: cover;
+  z-index:0;
+  .filter{
+    background: fade(@color-primary-0,30%);
+    height:100%;
+    width: 100%;
+  }
+  .logo{
+    height:500px;
+    width:500px;
+  }
 }

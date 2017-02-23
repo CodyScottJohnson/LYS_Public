@@ -8,6 +8,7 @@
  * Controller of the lysAdminApp
  */
 angular.module('LYS_Public')
-  .controller('MainCtrl', function ($scope) {
-    $scope.temp = [0,1,2,3,4];
+  .controller('MainCtrl', function ($scope, Data) {
+    $scope.Data = Data.data;
+    Data.getTestimonials();
   });

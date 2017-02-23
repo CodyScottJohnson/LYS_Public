@@ -1,0 +1,102 @@
+.Testimonial {
+  display: block;
+  position: relative;
+  .BoxShadowHelper(5);
+  height:400px;
+  border-radius: 5px;
+  figcaption,
+  figure {
+    /*add any other html5 elements you use*/
+    display: block;
+  }
+  .after {
+    position: absolute;;
+    z-index: 3;
+    display: inline-block;
+    top: 20px;
+  }
+
+  .TetimonialQuote {
+    color: #553700;
+  }
+  .polaroid {
+    padding: 20px 10px;
+    /*setting a width and adding overflow:hidden will clear the floats we're going to apply to figure*/
+    width: 100%;
+    overflow: hidden;
+    z-index:1;
+    /***Position the figures containing the images and captions***/
+    figure {
+      float: left;
+      /*places the images in a horizontal line*/
+      position: relative;
+      /*allows precise positioning of the tape in step 5- see support section below for more info*/
+      width: 200px; //width of the images*/
+      margin: 10px 20px;
+      /*space between the images*/
+    }
+
+    figure {
+      padding: 6px 8px 10px;
+      /*size of the frame*/
+      /*give the frame's background colour a gradient*/
+      background: #eee6d8;
+      /*fallback colour for browsers that don't support gradients*/
+      background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+      background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+      background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+      background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+      background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+      /*give the Polaroids a small drop shadow*/
+      -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+      -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+      box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+    }
+    /***Rotate each even numbered image 2 degrees clockwise***/
+    figure {
+      /*see support section below for more info on nth-child*/
+      -webkit-transform: rotate(-2deg);
+      -moz-transform: rotate(-2deg);
+      -o-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+      transform: rotate(-2deg);
+      /*because the image is rotated the opposite way, the drop-shadow needs moving to the other side of the image*/
+      -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+      -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+      box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
+    }
+
+    figcaption {
+      text-align: center;
+      font-family: 'Qwigley', cursive;
+      /* Reenie Beanie is available through Google Webfonts */
+      font-size: 1.3em;
+      font-weight: bolder;
+      color: #454f40;
+      letter-spacing: 0.09em;
+    }
+
+    figure:before {
+      /*see the support section below to more info on using the :before psuedo element*/
+      content: '';
+      display: block;
+      position: absolute;
+      left: 5px;
+      /*postion from the left side of the frame (positive value move the tape right, negative moves it left)*/
+      top: -15px;
+      /*position from the top of the frame (positive move it above the frame, negative below)*/
+      width: 75px;
+      /*width of the tape*/
+      height: 25px;
+      /*height of the tape*/
+      background-color: rgba(222,220,198,0.7);
+      /*colour of the tape, use rgba to make it slightly transparent*/
+      /*rotate the tape 12 degrees anti-clockwise*/
+      -webkit-transform: rotate(-12deg);
+      -moz-transform: rotate(-12deg);
+      -o-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+    }
+  }
+
+}

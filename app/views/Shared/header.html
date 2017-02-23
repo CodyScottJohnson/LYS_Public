@@ -1,26 +1,27 @@
-<div class="header">
-<div class="lys_header">
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Main.png" />
-      <div class="title">
-        Admin
-      </div></a>
-      <ul id="nav-mobile" class="right">
-        <li><a data-activates="slide-out" data-sidenav="left" data-menuwidth="220" data-closeonclick="false"><i class="medium material-icons">more_vert</i></a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<ul id="slide-out" class="side-nav">
-  <div class="lys_header_nav">
-    <img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Main.png" />
-  </div>
-  <div class="collection">
-      <a href="#!" class="collection-item"><span class="center both">Bookings</span></a>
-      <a href="#!" class="collection-item active"><span class="center both">Packages</span></a>
-      <a href="#!" class="collection-item"><span class="center both">Dates</span></a>
-    </div>
+<div class="inner_header">
 
-  </ul>
+<img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Main.png" />
+
+
+      <md-nav-bar
+           md-selected-nav-item="currentNavItem"
+           nav-bar-aria-label="navigation links">
+
+           <md-nav-item md-nav-click="goto('page1')" name="page1">
+             Home
+           </md-nav-item>
+           <md-nav-item md-nav-click="goto('page2')" name="page2">
+             Program
+           </md-nav-item>
+           <md-nav-item md-nav-click="goto('page3')" name="page3">
+             Rates
+           </md-nav-item>
+           <md-nav-item md-nav-click="goto('page3')" name="page3">
+             About Us
+           </md-nav-item>
+           <md-nav-item md-nav-click="goto('page3')" name="page3">
+             Contact
+           </md-nav-item>
+
+         </md-nav-bar>
 </div>

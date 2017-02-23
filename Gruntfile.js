@@ -49,7 +49,7 @@ module.exports = function (grunt) {
           current_symlink: 'current',
           port: '22',
           //privateKey: require('fs').readFileSync('F:/JFS.pem'),
-          privateKey: require('fs').readFileSync('/Users/Cody/devApps/Keys/LYS_Web.pem'),
+          //privateKey: require('fs').readFileSync('/Users/Cody/devApps/Keys/LYS_Web.pem'),
           //port: '<%= secret.production.port %>',
           releases_to_keep: '3'
           //release_subdir: 'myapp'

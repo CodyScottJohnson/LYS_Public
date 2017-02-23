@@ -1,15 +1,25 @@
-<div class="view">
-  <div class="parallax-container">
-      <div class="parallax">
-  <img src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Road.jpg" style="height:500px;width:500px" />
-  </div>
-  </div>
-  <div carousel3d ng-model="temp" visible=3>
-    <div carousel3d-slide ng-repeat="slide in app.slides track by $index">
-        <figure>
-          <section class="TestCont">
+<md-content scroll style="height:100%;width:100%" class="scrollbar">
+<div class="splash" style="top:{{pageYOffset*.75}}px!important">
+<div class="filter">
 
-            <div class="TestAfter">
+</div>
+<div class="center both">
+  <img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Splash.png"/>
+</div>
+</div>
+<div style="height:100%;width:100%;z-index:2;display:block;position:relative">
+
+</div>
+<md-subheader class="lys_header"><div ng-include="'views/Shared/header.html'"></div></md-subheader>
+
+<div class="view">
+  <div style="height:100%;width:100%;background:blue">
+
+  </div>
+    <div ng-repeat="testimonial in Data.Testimonials">
+        <figure class="Testimonial">
+          <section>
+            <div class="after">
               <img src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Testimonials/Test1After.png" width="200" alt="After" />
             </div>
 
@@ -21,19 +31,19 @@
                   <!--use figure to contain each image and caption-->
                   <img src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Testimonials/Test1Before.jpg" width="200" alt="before" />
                   <!--the image-->
-                  <figcaption>18lbs Lost</figcaption>
+                  <figcaption>{{testimonial.Pounds_Lost}} lbs Lost</figcaption>
                   <!--the caption that appears below the image-->
                 </figure>
               </div>
             </div>
-            <span><h1>Shannon:</h1></span>
+            <span><h1>{{testimonial.Name}}:</h1></span>
             <div style="left:450px;width:300px;position:absolute;display:block;top:70px">
               <h3 class="TetimonialQuote">“This program is so fun and fulfilling! The trainers are so positive and they believe in you when no one else does. They kick your butt and don’t accept any excuses, which really helps you see the results you want to see. They care about each participant and make you feel like a star!"</h3>
             </div>
             <div class="ReadMore" style="z-index:5; visibility:visible; top:80px;left:350px">
               <span><a href=#openModalTwo style="visibility:hidden">Read More</a></span></div>
-
           </section>
         </figure>
     </div>
 </div>
+</md-content>

@@ -10,7 +10,8 @@
  */
 angular
   .module('LYS_Public', [
-    'angular-carousel-3d',
+    'angular-parallax',
+    'config',
     'ngAnimate',
     'ngCookies',
     'ngResource',
