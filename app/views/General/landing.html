@@ -1,21 +1,128 @@
-<md-content scroll style="height:100%;width:100%" class="scrollbar">
-<div class="splash" style="top:{{pageYOffset*.75}}px!important">
+<md-content scroll style="height:100%;width:100%" class="scrollbar" id="scrollbox">
+<div class="splash" style="top:{{pageYOffset*.4}}px!important">
 <div class="filter">
 
 </div>
-<div class="center both">
   <img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Splash.png"/>
 </div>
-</div>
-<div style="height:100%;width:100%;z-index:2;display:block;position:relative">
+<div style="height:100%;width:100%;z-index:2;display:block;position:relative" >
 
 </div>
-<md-subheader class="lys_header"><div ng-include="'views/Shared/header.html'"></div></md-subheader>
-
+<div  sticky parentid="scrollbox"><div ng-include="'views/Shared/header.html'"></div></div>
 <div class="view">
-  <div style="height:100%;width:100%;background:blue">
+  <ul rn-carousel rn-carousel-controls rn-carousel-controls-allow-loop
+      rn-carousel-duration=800 rn-carousel-easing="easeOutCirc" rn-carousel-auto-slide=3 rn-carousel-transition="fadeAndSlide" class="carousel">
+  <li><div class="banner_slide" style="background-image:url('https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/PushUp.jpg')"></div></li>
+  <li><div class="banner_slide"></div></li>
+  <li><div class="banner_slide" style="background-image:url('https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Legs.jpg')"></div></li>
+    <li><div class="banner_slide" style="background-image:url('https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Mist.jpg')"></div></li>
+</ul>
 
+<div class="title_bar">
+
+  <div layout="row">
+    <div flex-gt-xs="70" flex="80" flex-gt-sm="50">
+      <div class="bar">
+        <div class="text">
+          Get<br />
+          <span>Lost</span>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+<h1><span>Senahu Guatemala</span></h1>
+<div class="passage">
+  A more beautiful place cannot be found on earth! Located in the beautiful mountains of Central America, Senahu is a rare treasure of untouched beauty. From its tropical landscape to the gorgeous mountain views, you will see banana trees, swing from hanging vines and hear coconuts fall from the trees. It is only accessible by an extremely rigorous 12 hour ride through the mountains on winding roads, or by a 50 minute helicopter ride over the lush mountains! We choose the helicopter! It is very secluded, and you will rarely see another tourist. Second only to the natural beauty of Senahu is the beauty of its people. Although very poor, the people of the Senahu region are warm and welcoming. The majority of the population, being indigenous Mayan, have a rich and colorful heritage. Most live without electricity or indoor plumbing, and most have dirt floor homes, yet they are resourceful with what they have. While walking through the streets you will see the people wearing their colorful traditional clothing, hear the singing from distant churches and sounds of laughter, and smell fresh tortillas being cooked by local vendors.
+</div>
+<div layout="column" layout-gt-sm="row">
+<div flex="100" flex-gt-sm="50">
+      <md-card class="md-whiteframe-10dp">
+        <img style="max-height:400px" ng-src="http://loseyourselfinguatemala.com/Images/Excursions/Semuc1.jpg" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Semuc Champey</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p>
+            Semuc Champey is a natural water-park in the middle of Guatemala’s rich jungle. Some have called it the 8th wonder of the world. Semuc Champey is a natural monument in the department of Alta Verapaz, Guatemala, near the Q’eqchi’ Maya town of Lanquin...
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center">
+         <md-button class="md-raised btn-main">Read More</md-button>
+
+        </md-card-actions>
+      </md-card>
+      <md-card class="md-whiteframe-10dp">
+        <img style="max-height:400px" ng-src="http://loseyourselfinguatemala.com/Images/Excursions/CaveReal4.jpg" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Se’amay Cave</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p>
+            Explore the deep, hidden caves of Seamay, Guatemala. This amazing cavern is known only to some local villagers. As you enter the cave you descend the antique Mayan carved staircase into a series of chambers and tunnels. As you continue exploring, you will find  ancient formations, small pools and some rare wildlife. Hidden amongst the lush tropical landscape, the Se’amay caves will be an adventure you won’t soon forget!</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center">
+         <md-button class="md-raised btn-main">Read More</md-button>
+
+        </md-card-actions>
+      </md-card>
+    </div>
+    <div flex="100" flex-gt-sm="100">
+          <md-card class="md-whiteframe-10dp">
+            <md-card-title-media>
+                        <div class="md-media-lg card-media">   <img style="max-height:800px" ng-src="http://loseyourselfinguatemala.com/Images/Excursions/Waterfall1.jpg" class="md-card-image" alt="Washed Out">
+                        </div>
+                      </md-card-title-media>
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Se’chaj’</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p>
+                The most beautiful waterfall and swimming holes in existence. This isn’t something you would ever be able to find on your own, and you won’t find it on the internet</p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="center">
+             <md-button class="md-raised btn-main">Read More</md-button>
+
+            </md-card-actions>
+          </md-card>
+        </div>
+      </div>
+<div class="title_bar">
+
+  <div layout="row">
+    <div flex-gt-xs="70" flex="80" flex-gt-sm="50">
+      <div class="bar">
+        <div class="text">
+          Get<br />
+          <span>Fit</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 col-xs-1">
+
+    </div>
+  </div>
+</div>
+<div class="title_bar">
+
+  <div layout="row">
+    <div flex-gt-xs="70" flex="80" flex-gt-sm="50">
+      <div class="bar">
+        <div class="text">
+          Give<br />
+          <span>Back</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
     <div ng-repeat="testimonial in Data.Testimonials">
         <figure class="Testimonial">
           <section>
@@ -25,14 +132,13 @@
 
             <div style="position:absolute; left:120px;top:80px;display:inline-block">
               <div class="polaroid">
-                <!--place the everything inside a div and give it an id or class for styling-->
-                <!--Image One-->
+
                 <figure>
-                  <!--use figure to contain each image and caption-->
+
                   <img src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Testimonials/Test1Before.jpg" width="200" alt="before" />
-                  <!--the image-->
+
                   <figcaption>{{testimonial.Pounds_Lost}} lbs Lost</figcaption>
-                  <!--the caption that appears below the image-->
+
                 </figure>
               </div>
             </div>
@@ -44,6 +150,6 @@
               <span><a href=#openModalTwo style="visibility:hidden">Read More</a></span></div>
           </section>
         </figure>
-    </div>
+    </div>-->
 </div>
 </md-content>

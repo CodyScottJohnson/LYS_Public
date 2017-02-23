@@ -1,0 +1,54 @@
+.carousel{
+  height:500px;
+  width:100%;
+  display: block;
+  position: absolute;
+  padding:0;
+  margin:0;
+  background: @gray-primary-1;
+  .banner_slide{
+    height:100%;
+    width:100%;
+    background-image: url("https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Roof.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+.rn-carousel-control{
+  height:100px!important;
+  line-height: 100px;
+  text-align: center;
+  width:70px!important;
+  background: fade(#F0E5E1,50%)!important;
+  top:200px;
+  opacity: 1;
+  color:darken(#F0E5E1,50%);
+  outline: none!important;
+  //.BoxShadowHelper(1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.9);
+  &:hover{
+    background: fade(#F0E5E1,70%)!important;
+  }
+  &:active{
+    outline: none!important;
+  }
+  &.rn-carousel-control-next{
+    right:0;
+    border-radius:2px 0 0 2px;
+    &::before{
+      font-family: 'Material Icons';
+      content: "navigate_next";
+      -webkit-font-feature-settings: 'liga';
+    }
+  }
+  &.rn-carousel-control-prev{
+    left:0;
+    border-radius:0 2px 2px 0;
+    &::before{
+      font-family: 'Material Icons';
+      content: "navigate_before";
+      -webkit-font-feature-settings: 'liga';
+    }
+  }
+}

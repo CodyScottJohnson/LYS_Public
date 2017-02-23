@@ -5,6 +5,8 @@
   background: url('https://loseyourselfinguatemala.com/API/Open/Media/Images/Backgrounds/Road.jpg');
   background-size: cover;
   z-index:0;
+  transition: all 1s linear;
+  padding:0!important;
   .filter{
     background: fade(@color-primary-0,30%);
     height:100%;
@@ -12,6 +14,48 @@
   }
   .logo{
     height:500px;
-    width:500px;
+    max-width:500px;
+    width:calc(100%+30px);
+    .center.both;
+  }
+}
+.title_bar{
+  .Font_Banner;
+  font-size:80px;
+  color:#51A3B8;
+  text-align: right;
+  vertical-align: middle;
+  line-height:70px;
+  text-shadow: none;
+  padding-top:20px;
+  padding-bottom:20px;
+  @media (max-width : @xs){
+    font-size:50px;
+    line-height:40px;
+  }
+  .bar{
+    width:100%;
+
+    background-color: #51A3B8;
+    display: inline-block;
+    left:0px;
+    .text{
+      background-color:white;
+      padding-left:30px;
+      //width:200px;
+      float:right;
+      span{
+        color:gray;
+      }
+    }
+  }
+}
+.passage{
+  .Font_Body;
+  font-size: 20px;
+  padding:0 100px 30px 100px;
+  text-align: center;
+  @media (max-width : @xs){
+    padding:0 10px 30px 10px;
   }
 }

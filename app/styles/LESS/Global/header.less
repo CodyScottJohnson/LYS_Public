@@ -4,7 +4,21 @@
   height: 100px;
   line-height: 70px;
   background: white;
-  .BoxShadowHelper(2);
+  box-shadow: none!important;
+  @media (max-width : @sm){
+    height:70px;
+  }
+  &.sticky{
+    position: fixed;
+    top:0;
+    background: fade(white,98%);
+    .inner_header{
+    .BoxShadowHelper(1);
+    @media (max-width : @sm){
+      height:70px;
+    }
+  };
+  }
   display: block;
   position: relative;
   z-index: 99;
@@ -25,7 +39,6 @@
   i{
     color:fade(gray,90%);
   }
-  .BoxShadowHelper(1);
   img.logo {
     top:5px;
     height: 90px;
@@ -33,6 +46,9 @@
     position: absolute;
     opacity: .7;
     left:50px;
+    @media (max-width : @sm){
+      height:60px;
+    }
   }
 
   .title {
@@ -47,4 +63,20 @@
 
   }
 }
+}
+.social_bar{
+  width:100%;
+  height:50px;
+  position: relative;
+  background: @gray-primary-1;
+  &.sticky{
+    margin-top:(@header_hight+5)*1px;
+    @media (max-width : @sm){
+        margin-top:71px;
+    }
+  }
+}
+.image{
+  height:500px;
+  width:100%;
 }

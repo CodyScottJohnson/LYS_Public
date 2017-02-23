@@ -12,7 +12,6 @@ angular.module('LYS_Public')
     var y = attrs.scrolly;
     angular.element(element).bind("scroll", function() {
       scope.pageYOffset = this.scrollTop;
-      console.log(this.scrollTop);
       scope.$apply();
     });
   };

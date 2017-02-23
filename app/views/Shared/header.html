@@ -1,9 +1,14 @@
+<div class="lys_header"  ng-class="{sticky:boolChangeClass}">
 <div class="inner_header">
 
 <img class="logo" src="https://loseyourselfinguatemala.com/API/Open/Media/Images/Logos/Logo_Main.png" />
+<div hide-gt-sm flex layout="column" layout-align="center end">
 
-
-      <md-nav-bar
+<md-button ng-click="showListBottomSheet()" class="md-icon-button" aria-label="Comment" style="height:50px;width:50px;text-align:center">
+        <md-icon><i  style="font-size:40px" class="material-icons">more_vert</i></md-icon>
+    </md-button>
+  </div>
+      <md-nav-bar hide show-gt-sm
            md-selected-nav-item="currentNavItem"
            nav-bar-aria-label="navigation links">
 
@@ -24,4 +29,8 @@
            </md-nav-item>
 
          </md-nav-bar>
+</div>
+</div>
+<div class="social_bar" ng-class="{sticky:boolChangeClass}">
+
 </div>

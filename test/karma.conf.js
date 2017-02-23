@@ -34,6 +34,7 @@ module.exports = function(config) {
       'bower_components/angular-swipe/dist/angular-swipe.js',
       'bower_components/angular-carousel-3d/dist/carousel-3d.js',
       'bower_components/angular-parallax/scripts/angular-parallax.js',
+      'bower_components/angular-carousel/dist/angular-carousel.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
