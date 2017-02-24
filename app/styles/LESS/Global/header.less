@@ -80,3 +80,36 @@
   height:500px;
   width:100%;
 }
+.mobile_menu{
+  padding:0!important;
+  background: fade(white,95%);
+  .BoxShadowHelperUp(1);
+  //height:70px;
+  md-list{
+    padding: 0;
+  }
+  md-list-item{
+    border-left:15px solid @trial-2;
+    border-bottom:1px solid fade(@gray-primary-0,10%);
+    height:80px!important;
+    &:nth-child(2){
+      border-left:15px solid @trial-3;
+    }
+    &:nth-child(3){
+      border-left:15px solid @trial-4;
+    }
+    &:nth-child(4){
+      border-left:15px solid @trial-5;
+    }
+    &:nth-child(5){
+      border-left:15px solid @trial-6;
+    }
+    &:nth-child(6){
+      border-left:15px solid @trial-1;
+    }
+    .md-list-item-content{
+      height:80px;
+      width:100%;
+    }
+  }
+}

@@ -5,9 +5,16 @@ h1{
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+  @media (max-width : @xs){
+    font-size: 30px;
+  }
   //.TextShadowHelper(1);
   span{
   border-bottom: 2px solid fade(darken(@trial-3,40%),10%);
   padding:0 50px 0 50px;
+  text-align: center;
+  @media (max-width : @xs){
+    padding:0;
+  }
 }
 }
